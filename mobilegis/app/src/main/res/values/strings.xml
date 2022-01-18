@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">mobilegis</string>
+
+
+
+
+    <string-array name="jenis">
+        <item>Pilih Kategori</item>
+        <item>Berbintang</item>
+        <item>Non Bintang</item>
+    </string-array>
+</resources>

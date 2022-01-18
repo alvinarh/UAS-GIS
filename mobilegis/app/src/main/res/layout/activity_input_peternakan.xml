@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+>
+
+
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/btnback"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+         />
+
+    <TextView
+        android:id="@+id/tvinputdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnback"
+        android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+
+        android:text="InputData"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvpeternakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvinputdata"
+        android:layout_marginLeft="20dp"
+
+        android:text="Hotel"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+
+        <TextView
+            android:id="@+id/judulnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Hotel"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/judulnama"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:hint="Nama Peternakan"
+
+            android:inputType="text" />
+
+
+        <TextView
+            android:id="@+id/juduljenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextName"
+            android:layout_marginTop="10dp"
+            android:text="Kategori Hotel" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/juduljenis"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <TextView
+            android:id="@+id/alamatpeternakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinner"
+            android:layout_marginTop="10dp"
+            android:text="Alamat Hotel" />
+
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/alamatpeternakan"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Alamat Hotel"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAlamat"
+        android:layout_marginTop="10dp"
+        android:text="Latitude" />
+
+
+        <EditText
+            android:id="@+id/editTextLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvLatitude"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Latitude"
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/black"
+            android:textSize="15sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+
+            android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLatitude"
+        android:layout_marginTop="10dp"
+        android:text="Longitude" />
+
+
+        <EditText
+            android:id="@+id/editTextLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tvLongitude"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:hint="Longitude"
+
+
+            android:textSize="15sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:inputType="textEmailAddress" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/ButtonInsert"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/editTextLongitude"
+        android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

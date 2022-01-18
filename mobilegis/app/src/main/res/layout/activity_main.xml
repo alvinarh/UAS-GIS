@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/logoJakartaBarat"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:src="@drawable/jakartabarat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:id="@+id/judul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persebaran Lokasi Hotel"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/logoJakartaBarat"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/judul2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kota Jakarta Barat"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/judul1"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnShowmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Peta"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/judul2"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnShowdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lihat Data"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnShowmap"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnInputdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Data"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnShowdata"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>
